@@ -16,7 +16,16 @@
 
 - has_many   :orders
 
- 
+ ## owners テーブル
+
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| encrypted_password | string | null: false               |
+
+### Association
+
+- has_many   :items
 
 ## items テーブル
 
