@@ -90,17 +90,17 @@ li {
   height: 450px ;
   margin: 0 160px;
 }
-.stylist-list{
+.staff-list{
   display: flex;
   justify-content: space-around;
   margin: 60px 0;
 }
 
-.stylist-image {
+.staff-image {
   height: 300px;
 }
 
-.stylist-name {
+.staff-name {
   font-size: 16px;
   text-align: center;
 }
