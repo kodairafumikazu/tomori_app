@@ -10,6 +10,23 @@
   </head>
 
   <body>
+    <header>
+      <div class="heading">
+        <h1 class="title">
+          <%= link_to "トモリ珈琲 online shop", root_path %>
+      </div>
+      <div class="navbar">
+        <ul class="nav-lists">
+          <%= link_to "店舗ガイド", root_path, class: :nav__lists %>
+          <%= link_to "メニュー", root_path, class: :nav__lists %>
+          <%= link_to "アクセス", root_path, class: :nav__lists %>
+          <%= link_to "ログアウト", root_path, method: :delete, class: :nav__lists %>
+          <%= link_to "ログイン", root_path, class: :nav__lists %>
+        </ul>
+      </div>
+    </header>
     <%= yield %>
+    <footer>
+      <p>Copyright(C) トモリ　珈琲 ALL RIGHTS RESERVED.</p>
   </body>
 </html>
