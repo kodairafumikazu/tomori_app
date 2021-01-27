@@ -27,6 +27,12 @@ header {
   margin-left: 30px;
 }
 
+.title {
+  letter-spacing: .1em;
+  font-size: 15px;
+  text-shadow: 1px 1px 2px silver;
+}
+
 .navbar {
   width: 50%;
   padding: 20px;
@@ -90,17 +96,17 @@ li {
   height: 450px ;
   margin: 0 160px;
 }
-.staff-list{
+.product-list{
   display: flex;
   justify-content: space-around;
   margin: 60px 0;
 }
 
-.staff-image {
+.product-image {
   height: 300px;
 }
 
-.staff-name {
+.product-name {
   font-size: 16px;
   text-align: center;
 }
