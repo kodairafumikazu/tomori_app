@@ -11,9 +11,13 @@ class ItemsController < ApplicationController
     #Item.create(item_params)
   end
 
-  private
-  def item_params
-    #params.require(:item).permit(:name, :iamge, :text)
+  def destroy
+    
   end
+
+  # private
+  # def item_params
+  #   #params.require(:item).permit(:name, :iamge, :text)
+  # end
 
 end

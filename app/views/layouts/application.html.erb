@@ -21,8 +21,8 @@
           <%= link_to "店舗ガイド", root_path, class: :nav__lists %>
           <%= link_to "メニュー", root_path, class: :nav__lists %>
           <%= link_to "アクセス", root_path, class: :nav__lists %>
-          <%= link_to "ログアウト", root_path, method: :delete, class: :nav__lists %>
-          <%= link_to "ログイン", new_user_registration_path, class: :nav__lists %>
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__lists %>
+          <%= link_to "ログイン", new_user_session_path, class: :nav__lists %>
         </ul>
       </div>
     </header>
