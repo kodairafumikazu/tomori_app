@@ -62,11 +62,13 @@ img{
   font-weight: bold;
 }
 .sidebar-container{
-  background: #C4C4C4;
+  background: #d7d2d2;
   height: 100%;
   width: 300px;
   float: left;
 }
+
+
 .footer a{
   background: #333;
   height: 80px;

@@ -1,17 +1,6 @@
 # テーブル設計
 
 
-## users テーブル
-
-| Column             | Type   | Options                   |
-| ------------------ | ------ | ------------------------- |
-| name               | string | null: false               |
-| email              | string | null: false, unique: true |
-| encrypted_password | string | null: false               |
-
-### Association
-
-- has_many   :orders
 
  ## owners テーブル
 
@@ -23,20 +12,35 @@
 
 ### Association
 
-- has_many   :items
+- has_many   :shoppings
 
-## items テーブル
+
+
+## shoppings テーブル
 
 | Column                 | Type       | Options                        |
 | ---------------------- | ---------- | ------------------------------ |
 | product_name           | string     | null: false                    |
-| info                   | text       | null: false                    |
 | price                  | integer    | null: false                    |
 | user                   | references | null: false, foreign_key: true |
 
 ### Association
 
 - has_one    :order
+
+
+
+## users テーブル
+
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| name               | string | null: false               |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
+
+### Association
+
+- has_many   :orders
 
 
 
@@ -50,7 +54,7 @@
 ### Association
 
 - belongs to :user
-- belongs to :item
+- belongs to :shopping
 - has_one    :address
 
 
