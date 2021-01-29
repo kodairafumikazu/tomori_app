@@ -1,0 +1,76 @@
+html {
+  scroll-behavior: smooth;
+  }
+
+.header b{
+  text-align: center;
+  padding: 100px 5px;
+  background: #2a5c84;
+  color: white;
+  }
+
+.header c {
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 0 3px;
+  transition: all .5s;
+  }
+
+.header c:hover {
+  background: white;
+  color: #2a5c84;
+  } 
+
+.body {
+  font-size: 18px;
+  margin: 0;
+  }
+  
+.main a{
+  background: #2da9af;
+  padding: 10px 0 40px 0;
+  }
+
+.main h2 {
+  color: white;
+  text-align: center;
+  margin: 40px 0;
+  }
+
+.main img {
+  width: 100%;
+  }
+
+.mokuji {
+  background: white;
+  width: 250px;
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 10px;
+  }
+
+.mokuji h3 {
+  text-align: center;
+  margin: 0;
+  }
+
+.mokuji ul {
+  margin: 10px 0;
+  }
+
+.mokuji a {
+  transition: all .5s;
+  }
+
+.mokuji a:hover {
+  color: orange;
+  }
+
+.footer a{
+  background: #f76560;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  } 

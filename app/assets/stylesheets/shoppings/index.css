@@ -10,7 +10,7 @@ a{
 img{
   vertical-align:bottom;
 }
-.header{
+.header a{
   background: #D8D8D8;
   height: 80px;
   width: 980px;
@@ -67,10 +67,28 @@ img{
   width: 300px;
   float: left;
 }
-.footer{
+.footer a{
   background: #333;
   height: 80px;
   width: 980px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.order-btn {
+  width: 120px;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.order-title {
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+}
+
+.order-btn-icon {
+  width: 60%;
 }

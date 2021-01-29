@@ -15,9 +15,9 @@
           <%= image_tag "230311_s.jpg", class: 'article-img' %>
         </div>
         <div class="article-foot">
-          <h2 class="article-title">
+          <div class="article-title">
             パンケーキ
-          </h2>
+          </div>
         </div>
       </a>
     </article>
@@ -27,9 +27,9 @@
           <%= image_tag "cappuccino.jpg", class: 'article-img' %>
         </div>
         <div class="article-foot">
-          <h2 class="article-title">
+          <div class="article-title">
             カプチーノ
-          </h2>
+          </div>
         </div>
       </a>
     </article>
@@ -39,9 +39,9 @@
           <%= image_tag "shortcake.jpg", class: 'article-img' %>
         </div>
         <div class="article-foot">
-          <h2 class="article-title">
+          <div class="article-title">
             ショートケーキ
-          </h2>
+          </div>
         </div>
       </a>
     </article>
@@ -51,9 +51,9 @@
           <%= image_tag "202020_s.jpg", class: 'article-img' %>
         </div>
         <div class="article-foot">
-          <h2 class="article-title">
+          <div class="article-title">
             ブレンド珈琲
-          </h2>
+          </div>
         </div>
       </a>
     </article>
@@ -63,9 +63,9 @@
           <%= image_tag "83728_s.jpg", class: 'article-img' %>
         </div>
         <div class="article-foot">
-          <h2 class="article-title">
+          <div class="article-title">
             ギフトセット
-          </h2>
+          </div>
         </div>
       </a>
     </article>
@@ -75,15 +75,17 @@
           <%= image_tag "52680_s.jpg", class: 'article-img' %>
         </div>
         <div class="article-foot">
-          <h2 class="article-title">
+          <div class="article-title">
             ギフトカード
-          </h2>
+          </div>
         </div>
       </a>
     </article>
-    
- 
   </main>
+  <%= link_to root_path, class: 'order-btn' do %>
+    <span class='order-title'>購入する</span>
+    <%= image_tag '210746.jpg' ,class: "order-btn-icon" %>
+  <% end %>
  
   <aside class="sidebar-container">
   </aside>
