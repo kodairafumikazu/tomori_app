@@ -1,0 +1,67 @@
+/*コンテンツ（見出しバーや文字などが入っているブロック）
+---------------------------------------------------------------------------*/
+/*コンテンツのh2タグの設定*/
+#comments h2 {
+	clear: both;
+	margin-bottom: 20px;
+	color: #fff;		/*文字色*/
+	padding: 10px 20px;	/*上下、左右への余白*/
+	background: #546247;	/*背景色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+}
+/*コンテンツのh3タグの設定*/
+#comments h3 {
+	clear: both;
+	margin-bottom: 20px;
+	padding: 8px 20px;	/*上下、左右への余白*/
+	background: #fff;	/*背景色*/
+	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
+	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
+}
+/*コンテンツのp(段落)タグ設定*/
+#comments p {
+	padding: 0px 20px 20px;	/*上、左右、下への余白*/
+}
+/*他。微調整。*/
+#comments p + p {
+	margin-top: -5px;
+}
+#comments h2 + p,
+#comments h3 + p {
+	margin-top: -10px;
+}
+#comments section + section {
+	margin-top: 30px;
+}
+
+/*テーブル１行目に入った見出し部分（※caption）*/
+.ta1 caption {
+	border: 1px solid #999;	/*テーブルの枠線の幅、線種、色*/
+	border-bottom: none;	/*下線だけ消す*/
+	text-align: left;		/*文字を左寄せ*/
+	background: #eee;		/*背景色*/
+	font-weight: bold;		/*太字に*/
+	padding: 10px;			/*ボックス内の余白*/
+}
+/*テーブル１行目に入った見出し部分（※tamidashi）*/
+.ta1 th.tamidashi {
+	width: auto;
+	text-align: left;	/*左よせ*/
+	background: #eee;	/*背景色*/
+}
+/*ta1テーブルブロック設定*/
+.ta1 {
+	table-layout: fixed;
+	width: 100%;
+	margin: 0 auto 20px;
+}
+.ta1, .ta1 td, .ta1 th {
+	word-break: break-all;
+	border: 1px solid #999;	/*テーブルの枠線の幅、線種、色*/
+	padding: 10px;			/*テーブル内の余白*/
+}
+/*テーブルの左側ボックス*/
+.ta1 th {
+	text-align: center;	/*センタリング*/
+	width: 30%;			/*幅*/
+}
