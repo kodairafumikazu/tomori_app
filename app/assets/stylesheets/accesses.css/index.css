@@ -52,17 +52,18 @@ font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Minch
 
 .ta1 {
 	table-layout: fixed;
-	width: 100%;
-	margin: 0 auto 20px;
+	width: 90%;
+	margin: 0 auto 150px;
 }
+
 .ta1, .ta1 td, .ta1 th {
 	word-break: break-all;
 	border: 1px solid #999;	
-	padding: 10px;		
+	padding: 12px;		
 }
 
 .ta1 th {
 	text-align: center;	
-	width: 30%;	
+	width: 20%;	
 }
 
