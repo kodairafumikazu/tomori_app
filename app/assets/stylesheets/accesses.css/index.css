@@ -1,7 +1,11 @@
 /*コンテンツ（見出しバーや文字などが入っているブロック）
 ---------------------------------------------------------------------------*/
 /*コンテンツのh2タグの設定*/
-#comments h2 {
+.comments {
+font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+}
+
+.comments h2 {
 	clear: both;
 	margin-bottom: 20px;
 	color: #fff;		/*文字色*/
@@ -10,7 +14,7 @@
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 /*コンテンツのh3タグの設定*/
-#comments h3 {
+.comments h3 {
 	clear: both;
 	margin-bottom: 20px;
 	padding: 8px 20px;	/*上下、左右への余白*/
@@ -19,18 +23,18 @@
 	border-radius: 10px;	/*角を丸くする指定。この１行を削除すれば角丸がなくなります。*/
 }
 /*コンテンツのp(段落)タグ設定*/
-#comments p {
+.comments p {
 	padding: 0px 20px 20px;	/*上、左右、下への余白*/
 }
 /*他。微調整。*/
-#comments p + p {
+.comments p + p {
 	margin-top: -5px;
 }
-#comments h2 + p,
-#comments h3 + p {
+.comments h2 + p,
+.comments h3 + p {
 	margin-top: -10px;
 }
-#comments section + section {
+.comments section + section {
 	margin-top: 30px;
 }
 
@@ -65,3 +69,4 @@
 	text-align: center;	/*センタリング*/
 	width: 30%;			/*幅*/
 }
+

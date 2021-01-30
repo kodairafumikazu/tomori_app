@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :items, only: :index
   resources :owners 
   resources :store_guides, only: :index
+  resources :accesses, only: :index
 
   resources :shoppings 
     #resources :orders, only: [:create, :index]
