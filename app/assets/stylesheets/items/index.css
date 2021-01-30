@@ -145,7 +145,7 @@ li {
 }
 
 .middle-content {
-  height: 450px ;
+  height: 450px;
   margin: 0 160px;
 }
 .product-list{
@@ -154,9 +154,15 @@ li {
   margin: 60px 0;
 }
 
-.product-image {
+.product-image-to-circle {
+  background-image: url("98767_s.jpg", "155001_s.jpg", "1613526_s.jpg");
+  width:  300px;
+  border-radius: 50%;
+  background-position: left top;
+  border: 5px solid #b5aaaa; 
   height: 300px;
 }
+
 
 .product-name {
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
