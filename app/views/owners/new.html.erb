@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <div class="owners-sell-contents">
+    <header class="owners-sell-header">
+      <% link_to '210746.jpg', "/" %>
+
+    </header>
+    <div class="owners-sell-main">
+      <h2 class="owners-sell-title">商品の情報を入力</h2>
+      <%= form_with model: @shopping, url: root_path, local: true do |f| %>
+
+      <%# render 'shared/error_messages', model: f.object %>
+
+      <%# 出品画像 %>
+      <div class="img-upload">
+        <div class="weight-bold-text">
+          出品画像
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <% f.file_field :image, id:"owner-image" %>
+        </div>
+      </div>
+      <%# /出品画像 %>
+      <%# 商品名と商品説明 %>
+      <div class="new-owners">
+        <div class="weight-bold-text">
+          商品名
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :product_name, class:"owners-text", id:"owner-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      </div>
+          
+
+      <%# 販売価格 %>
+      <div class="price-content">
+        <div class="price-text">
+          <span>価格</span>
+          <span class="indispensable">必須</span>
+        </div>
+        <span class="sell-yen">¥</span>
+        <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）300" %>
+      </div>
+          
+      <%# 下部ボタン %>
+      <div class="owners-sell-btn-contents">
+        <%= f.submit "出品する", class:"owners-sell-btn" %>
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
+      </div>
+      <%# /下部ボタン %>
+    </div>
+    <% end %>
+  </div>
+</html>
+
+  

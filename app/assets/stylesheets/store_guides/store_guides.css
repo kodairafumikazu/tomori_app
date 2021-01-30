@@ -9,7 +9,7 @@ html {
   color: white;
   }
 
-.header c {
+/* .header c {
   color: white;
   border: solid 1px white;
   border-radius: 10px;
@@ -21,27 +21,23 @@ html {
 .header c:hover {
   background: white;
   color: #2a5c84;
-  } 
+  }  */
 
-.body {
+/* .body {
   font-size: 18px;
   margin: 0;
-  }
+  } */
   
-.main a{
-  background: #2da9af;
-  padding: 10px 0 40px 0;
-  }
 
-.main h2 {
+/* .main h2 {
   color: white;
   text-align: center;
   margin: 40px 0;
-  }
+  } */
 
-.main img {
+/* .main img {
   width: 100%;
-  }
+  } */
 
 .mokuji {
   background: white;
@@ -51,7 +47,7 @@ html {
   border-radius: 10px;
   }
 
-.mokuji h3 {
+/* .mokuji h3 {
   text-align: center;
   margin: 0;
   }
@@ -67,10 +63,4 @@ html {
 .mokuji a:hover {
   color: orange;
   }
-
-.footer a{
-  background: #f76560;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  } 
+ */

@@ -2,10 +2,14 @@ class ShoppingsController < ApplicationController
   before_action :move_to_index, except: [:index, :show]
 
   def index
+    
   end
 
-  def show
+  def new
+    #@shopping = Shopping.new     ############################
   end
+
+  
 
   def move_to_index
     unless user_signed_in?
