@@ -1,3 +1,6 @@
+
+
+
 .owner-btn {
   width: 120px;
   text-align: center;
@@ -17,7 +20,7 @@
 }
 
 footer {
-  height: 60px;
+  height: 100%;
   background-color: #f0f0f0;
   text-align: center;
   color: gray;

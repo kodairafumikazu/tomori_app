@@ -5,8 +5,6 @@
     <title>トモリ珈琲</title>
   </head>
   <body>
-    
-
     <div class="contents">
       <div class="first-view">
         <%= image_tag "cafe1.jpg", class:"top-image" %>
@@ -32,20 +30,19 @@
         <h2 class="heading-name">ギャラリー</h2>
         <ul class="product-list">
           <li>
-            <%= image_tag "98767_s.jpg", class:"product-image" %>
+            <%= image_tag "98767_s.jpg", :size =>"300x300", class:"product-image" %>
             <h4 class="product-name">直営工場</h4>
           </li>
           <li>
-            <%= image_tag "155001_s.jpg", class:"product-image" %>
+            <%= image_tag "155001_s.jpg", :size =>"300x300", class:"product-image" %>
             <h4 class="product-name">厳選豆</h4>
           </li>
           <li>
-            <%= image_tag "1613526_s.jpg", class:"product-image" %>
+            <%= image_tag "1613526_s.jpg", :size =>"300x300", class:"product-image" %>
             <h4 class="product-name">直営農園</h4>
           </li>
         </ul>
       </div>
-
       <div class="bottom-content">
         <form class="contact-form">
           <h2 class="heading-name">メールでお問い合わせ</h2>
@@ -55,9 +52,7 @@
           <input type="submit" value="SEND" class="send">
         </form>
       </div>
-
     </div>
-
     <footer>
     </footer>
   </body>

@@ -95,9 +95,6 @@ li {
   list-style: none;
 }
 
-/* 省略 */
-
-/* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
 .contents {
   background-color: white;
 }
@@ -147,7 +144,6 @@ li {
   padding-right: 30px;
 }
 
-/* ギャラリー */
 .middle-content {
   height: 450px ;
   margin: 0 160px;
@@ -168,7 +164,7 @@ li {
   text-align: center;
 }
 
-/* フォーム */
+
 .bottom-content {
   height: 800px ;
   margin: 0 160px;
@@ -206,17 +202,11 @@ li {
 
 
 footer {
-  height: 60px;
+  height: 100px;
   background-color: #f0f0f0;
   text-align: center;
   color: gray;
 }
-
-
-
-
-
-
 
 
 div.contents.row h2 {

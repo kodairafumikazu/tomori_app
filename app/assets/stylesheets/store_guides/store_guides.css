@@ -14,13 +14,14 @@ html {
   margin:0px auto;
   padding:80px 0px;
 }
-/* content */
+
 .wrapper .content .headings {
   margin:0px 0px 40px 0px;
   font-size: 24px;
   font-weight: normal;
   text-align: center;
 }
+
 @media (min-width: 992px) {
   .wrapper .content .list {
     display: flex;
@@ -28,17 +29,20 @@ html {
     justify-content: center;
   }
 }
+
 .wrapper .content .list-item {
   margin: 50px 0px;
   padding: 0px 50px;
   text-align: center;
 }
+
 @media (min-width: 992px) {
   .wrapper .content .list-item {
     margin: 0px;
     width:calc(100% / 3);
   }
 }
+
 .wrapper .content .list-item .image {
   display: block;
   width: 100%;
@@ -46,6 +50,7 @@ html {
   margin: 30px auto 30px auto;
   border-radius: 100%;
 }
+
 .wrapper .content .list-item .text {
   line-height: 3rem;
   font-size: 0.8rem;

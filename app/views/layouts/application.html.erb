@@ -5,21 +5,17 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
-    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <header>
       <div class="heading">
         <h1 class="title">
-          <%= link_to "トモリ珈琲 online shop", root_path %>
-            
+        <%= link_to "トモリ珈琲 online shop", root_path %>
       </div>
       <div class="navbar">
         <ul class="nav-lists">
-        
           <%= link_to "店舗ガイド", store_guides_path, class: :nav__lists %>
           <%= link_to "ショッピング", shoppings_path, class: :nav__lists %>
           <%= link_to "アクセス", accesses_path, class: :nav__lists %>
@@ -34,7 +30,6 @@
             <div class="nav-lists2">
               <%= link_to "新規登録", new_user_registration_path, class: :nav__lists %>
             </div>
-            
           <% end %>
         </ul>
       </div>
