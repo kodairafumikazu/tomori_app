@@ -10,7 +10,7 @@ a{
 img{
   vertical-align:bottom;
 }
-.header a{
+.header {
   background: #D8D8D8;
   height: 80px;
   width: 980px;

@@ -1,66 +1,53 @@
 html {
   scroll-behavior: smooth;
-  }
+}
 
-.header b{
+.list-item {
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
+}
+
+.wrapper {
+  width:100%;
+}
+.wrapper .container {
+  max-width:1000px;
+  margin:0px auto;
+  padding:80px 0px;
+}
+/* content */
+.wrapper .content .headings {
+  margin:0px 0px 40px 0px;
+  font-size: 24px;
+  font-weight: normal;
   text-align: center;
-  padding: 100px 5px;
-  background: #2a5c84;
-  color: white;
+}
+@media (min-width: 992px) {
+  .wrapper .content .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
-/* .header c {
-  color: white;
-  border: solid 1px white;
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin: 0 3px;
-  transition: all .5s;
-  }
-
-.header c:hover {
-  background: white;
-  color: #2a5c84;
-  }  */
-
-/* .body {
-  font-size: 18px;
-  margin: 0;
-  } */
-  
-
-/* .main h2 {
-  color: white;
+}
+.wrapper .content .list-item {
+  margin: 50px 0px;
+  padding: 0px 50px;
   text-align: center;
-  margin: 40px 0;
-  } */
-
-/* .main img {
+}
+@media (min-width: 992px) {
+  .wrapper .content .list-item {
+    margin: 0px;
+    width:calc(100% / 3);
+  }
+}
+.wrapper .content .list-item .image {
+  display: block;
   width: 100%;
-  } */
-
-.mokuji {
-  background: white;
-  width: 250px;
-  padding: 10px;
-  margin: 30px auto;
-  border-radius: 10px;
-  }
-
-/* .mokuji h3 {
-  text-align: center;
-  margin: 0;
-  }
-
-.mokuji ul {
-  margin: 10px 0;
-  }
-
-.mokuji a {
-  transition: all .5s;
-  }
-
-.mokuji a:hover {
-  color: orange;
-  }
- */
+  max-width: 300px;
+  margin: 30px auto 30px auto;
+  border-radius: 100%;
+}
+.wrapper .content .list-item .text {
+  line-height: 3rem;
+  font-size: 0.8rem;
+  color: #666666;
+}
