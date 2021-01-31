@@ -1,11 +1,11 @@
 class OwnersController < ApplicationController
 
   def index
-    @shoppings = Shopping.includes(:owner).order('created_at DESC')
+     @shoppings = Shopping.all
   end
 
   def new
-    @shopping = Shopping.new
+     @shopping = Shopping.new
   end
 
   def create

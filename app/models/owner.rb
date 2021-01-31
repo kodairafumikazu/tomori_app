@@ -9,4 +9,9 @@ class Owner < ApplicationRecord
 
   validates :name, presence: true, format: { with: /\A[ぁ-んァ-ヶ一-龥々]+\z/, message: '全角（漢字、ひらがな、カタカナ）文字を使用してください' } do
   end
+
+  def owner_params
+    params.require(:owner).permit(:content, :image).merge(owner_id: current_owner.id)
+  end
+
 end
