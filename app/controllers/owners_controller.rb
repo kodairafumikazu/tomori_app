@@ -9,7 +9,7 @@ class OwnersController < ApplicationController
   end
 
   def create
-    @shopping = Shopping.new(item_params)
+    @shopping = Shopping.new#(shopping_params)
     if @shopping.save
       redirect_to root_path
     else

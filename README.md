@@ -27,6 +27,8 @@
 ### Association
 
 - has_one    :order
+- belongs to   :owner
+
 
 
 
