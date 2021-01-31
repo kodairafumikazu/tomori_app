@@ -1,7 +1,7 @@
 class OwnersController < ApplicationController
 
   def index
-    #@shoppings = Item.includes(:user).order('created_at DESC')
+    @shoppings = Shopping.includes(:owner).order('created_at DESC')
   end
 
   def new
@@ -9,12 +9,12 @@ class OwnersController < ApplicationController
   end
 
   def create
-    # @item = Item.new(item_params)
-    # if @item.save
-    #   redirect_to root_path
-    # else
-    #   render :new
-    # end
+    @shopping = Shopping.new(item_params)
+    if @shopping.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
 
