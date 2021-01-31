@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 2021_01_31_072013) do
   end
 
   create_table "orders", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "owner_id"
+    t.bigint "user_id"
     t.bigint "shopping_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["owner_id"], name: "index_orders_on_owner_id"
     t.index ["shopping_id"], name: "index_orders_on_shopping_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "owners", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -72,6 +72,6 @@ ActiveRecord::Schema.define(version: 2021_01_31_072013) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "orders", "owners"
   add_foreign_key "orders", "shoppings"
+  add_foreign_key "orders", "users"
 end
