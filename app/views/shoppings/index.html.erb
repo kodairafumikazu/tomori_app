@@ -1,100 +1,90 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-  </head>
-  <body>
-    <header class="header">
-    </header>
-    <div class="main-wrap">
-      <main class="main">
-        <article class="article-card">
-          <a href="" class="article-link"><div>メニュー①</div>
-            <div class="article-head">
-              <%= image_tag "230311_s.jpg", class: "article-img" %>
-            </div>
-            <div class="article-foot">
-              <div class="article-title">
-                パンケーキ　450円
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card">
-          <a href="" class="article-link"><div>メニュー②</div>
-            <div class="article-head">
-              <%= image_tag "cappuccino.jpg", class: "article-img" %>
-            </div>
-            <div class="article-foot">
-              <div class="article-title">
-                カプチーノ　420円
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card">
-          <a href="" class="article-link"><div>メニュー③</div>
-            <div class="article-head">
-              <%= image_tag "shortcake.jpg", class: "article-img" %>
-            </div>
-            <div class="article-foot">
-              <div class="article-title">
-                ショートケーキ　450円
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card">
-          <a href="" class="article-link"><div>メニュー④</div>
-            <div class="article-head">
-              <%= image_tag "202020_s.jpg", class: "article-img" %>
-            </div>
-            <div class="article-foot">
-              <div class="article-title">
-                ブレンド珈琲　420円
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card">
-          <a href="" class="article-link"><div>オリジナル商品①</div>
-            <div class="article-head">
-              <%= image_tag "83728_s.jpg", class: "article-img" %>
-            </div>
-            <div class="article-foot">
-              <div class="article-title">
-                ギフトセット　1000円
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="article-card">
-          <a href="" class="article-link"><div>オリジナル商品②</div>
-            <div class="article-head">
-              <%= image_tag "52680_s.jpg", class: "article-img" %>
-            </div>
-            <div class="article-foot">
-              <div class="article-title">
-                ギフトカード　500円
-              </div>
-            </div>
-          </a>
-        </article>
-      </main>
-      <%# if user_signed_in? %>
-        <%= link_to root_path, class: 'order-btn' do %>
-          <span class='order-title'>商品を購入</span>
-          <%= image_tag "210746.jpg", class: "order-btn-icon" %>
-        <% end %>
-      <%# else %>
-        <%# link_to new_owner_path, class: 'order-btn' do %>
-          <%# <span class='order-btn-text'>出品する</span> %>
-          <%# image_tag "watermark.jpg", class: "order-btn-icon" %>
-        <%# end %>
-      <%# end %>
-      <aside class="sidebar-container">
-      </aside>
-    </div>
-    <footer class="footers">
-    </footer>
-  </body>
-</html>
+<div class="main-wrap">
+  <main class="main">
+    <article class="article-card">
+      <a href="" class="article-link"><div>メニュー①</div>
+        <div class="article-head">
+          <%= image_tag "230311_s.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            パンケーキ　450円
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="article-card">
+      <a href="" class="article-link"><div>メニュー②</div>
+        <div class="article-head">
+          <%= image_tag "cappuccino.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            カプチーノ　420円
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="article-card">
+      <a href="" class="article-link"><div>メニュー③</div>
+        <div class="article-head">
+          <%= image_tag "shortcake.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            ショートケーキ　450円
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="article-card">
+      <a href="" class="article-link"><div>メニュー④</div>
+        <div class="article-head">
+          <%= image_tag "202020_s.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            ブレンド珈琲　420円
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="article-card">
+      <a href="" class="article-link"><div>オリジナル商品①</div>
+        <div class="article-head">
+          <%= image_tag "83728_s.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            ギフトセット　1000円
+          </div>
+        </div>
+      </a>
+    </article>
+    <article class="article-card">
+      <a href="" class="article-link"><div>オリジナル商品②</div>
+        <div class="article-head">
+          <%= image_tag "52680_s.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            ギフトカード　500円
+          </div>
+        </div>
+      </a>
+    </article>
+  </main>
+  <%# if user_signed_in? %>
+    <%= link_to root_path, class: 'order-btn' do %>
+      <span class='order-title'>商品を購入</span>
+      <%= image_tag "210746.jpg", class: "order-btn-icon" %>
+    <% end %>
+  <%# else %>
+    <%# link_to new_owner_path, class: 'order-btn' do %>
+      <%# <span class='order-btn-text'>出品する</span> %>
+      <%# image_tag "watermark.jpg", class: "order-btn-icon" %>
+    <%# end %>
+  <%# end %>
+  <aside class="sidebar-container">
+  </aside>
+</div>
+
