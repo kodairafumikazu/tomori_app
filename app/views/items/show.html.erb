@@ -37,6 +37,7 @@
                 <%= link_to "オーナーログアウト", destroy_owner_session_path, method: :delete, class: :nav__listss %>
               <% else %>
                 <%= link_to "オーナーログイン", new_owner_session_path, class: :nav__listss %>
+                <%= link_to "オーナー新規登録", new_owner_registration_path, class: :nav__lists %>
               <% end %>
             </div>
           </div>
