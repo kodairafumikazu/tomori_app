@@ -19,6 +19,7 @@
           <%= link_to "店舗ガイド", store_guides_path, class: :nav__lists %>
           <%= link_to "ショッピング", shoppings_path, class: :nav__lists %>
           <%= link_to "アクセス", accesses_path, class: :nav__lists %>
+          <%= link_to "フランチャイズ募集", item_path(:id), class: :nav__lists %>
           <% if user_signed_in? %>
             <div class="nav-lists2">
             <%# ユーザー %>
@@ -42,9 +43,9 @@
     <%= yield %>
     <footer>
       <p>Copyright(C) トモリ 珈琲 ALL RIGHTS RESERVED.</p>
-      <div class="nav-lists2">
+      <%# <div class="nav-lists2">
         <%= link_to "加盟相談&お問い合わせ", item_path(:id), class: :nav__lists %>
-      </div>
+      <%#div %>
     </footer>
   </body>
 </html>
