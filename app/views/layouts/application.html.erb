@@ -21,14 +21,19 @@
           <%= link_to "アクセス", accesses_path, class: :nav__lists %>
           <% if user_signed_in? %>
             <div class="nav-lists2">
-              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__lists %>
+            <%# ユーザー %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__lists %>
+          <% elsif owner_signed_in? %>
+            <%# 管理者 %>
+            <%= link_to "ログアウト", destroy_owner_session_path, method: :delete, class: :nav__lists %>
             </div>
           <% else %>
             <div class="nav-lists2">
-              <%= link_to "ログイン", new_user_session_path, class: :nav__lists %>
+            <%# ゲストユーザー %>
+            <%= link_to "ログイン", new_user_session_path, class: :nav__lists %>
             </div>
             <div class="nav-lists2">
-              <%= link_to "新規登録", new_user_registration_path, class: :nav__lists %>
+            <%= link_to "新規登録", new_user_registration_path, class: :nav__lists %>
             </div>
           <% end %>
         </ul>
