@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :store_guides, only: :index
   resources :accesses, only: :index
 
-  resources :shoppings 
+  resources :shoppings do
     resources :orders, only: [:create, :index]
+  end
 end
