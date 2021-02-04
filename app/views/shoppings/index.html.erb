@@ -76,14 +76,13 @@
     <%# 商品一覧 %>
     <% @shoppings.each do |shopping| %>
       <article class="article-card">
-        <a href="" class="article-link"><%= shopping.product_name %>
+        <a href="" class="article-link"><div>新商品</div>
           <div class='article-head'>  
-            <%# link_to shopping_path(shopping.id) do %>
             <%= image_tag shopping.image, class: "article-img" %>
           </div>  
           <div class="article-foot">
             <div class="article-title">
-              <%= "#{shopping.price}円" %>
+              <span><%= shopping.product_name %>&nbsp;&nbsp;&nbsp;<%= "#{shopping.price}円" %></span>
             </div>
           </div>
         </a>
@@ -95,7 +94,6 @@
       <article class="article-card">
         <a href="" class="article-link"><div>ダミー商品</div>
           <div class="article-head">
-            <%# link_to new_shopping_path do %>
             <%= image_tag "4404299_s.jpg", class: "article-img" %>
           </div>
           <div class="article-foot">
@@ -103,7 +101,6 @@
               カフェモカ　420円
             </div>
           </div>
-          <%# end %>
         </a>
       </article>
     <% end %>
