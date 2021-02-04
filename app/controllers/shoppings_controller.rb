@@ -1,5 +1,5 @@
 class ShoppingsController < ApplicationController
-  #before_action :move_to_index, except: :index
+  before_action :move_to_index, except: :index
   #before_action :set_shopping, only: [:show, :edit, :update, :destroy]
 
 
@@ -33,7 +33,7 @@ class ShoppingsController < ApplicationController
   #   @shopping = Shopping.find(params[:id])
   # end
 
-  # def move_to_index
-  #   redirect_to action: :index unless user_signed_in? || owner_signed_in?
-  # end
+   def move_to_index
+     redirect_to action: :index unless user_signed_in? || owner_signed_in?
+   end
 end
