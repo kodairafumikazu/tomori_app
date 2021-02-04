@@ -74,39 +74,39 @@
       </a>
     </article>
     <%# 商品一覧 %>
-    <article class="article-card">
-      <% @shoppings.each do |shopping| %>
-      <a href="" class="article-link"><%= shopping.product_name %>
-        <div class='article-head'>  
-          <%# link_to shopping_path(shopping.id) do %>
-          <%= image_tag shopping.image, class: "article-img" %>
-        </div>  
-        <div class="article-foot">
-          <div class="article-title">
-            <%= "#{shopping.price}円" %>
+    <% @shoppings.each do |shopping| %>
+      <article class="article-card">
+        <a href="" class="article-link"><%= shopping.product_name %>
+          <div class='article-head'>  
+            <%# link_to shopping_path(shopping.id) do %>
+            <%= image_tag shopping.image, class: "article-img" %>
+          </div>  
+          <div class="article-foot">
+            <div class="article-title">
+              <%= "#{shopping.price}円" %>
+            </div>
           </div>
-        </div>
-        <%# end %>
-      </a>
-      <% end %>
-    </article>
+        </a>
+      </article>
+    <% end %>
+    
 
     <% unless @shoppings.present? %>
-    <article class="article-card">
-      <a href="" class="article-link"><div>ダミー商品</div>
-        <div class="article-head">
-          <%= link_to new_shopping_path do %>
-          <%= image_tag "4404299_s.jpg", class: "article-img" %>
-        </div>
-        <div class="article-foot">
-          <div class="article-title">
-            カフェモカ　420円
+      <article class="article-card">
+        <a href="" class="article-link"><div>ダミー商品</div>
+          <div class="article-head">
+            <%# link_to new_shopping_path do %>
+            <%= image_tag "4404299_s.jpg", class: "article-img" %>
           </div>
-        </div>
-        <% end %>
-      </a>
+          <div class="article-foot">
+            <div class="article-title">
+              カフェモカ　420円
+            </div>
+          </div>
+          <%# end %>
+        </a>
+      </article>
     <% end %>
-    </article>
   </main>
 
   
