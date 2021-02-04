@@ -5,6 +5,12 @@ Rails.application.routes.draw do
     registrations: "owners/registrations"
     #shoppings: "shoppings"
   }
+
+    # devise_scope :owner do
+    #   get 'owners/:id', to:
+    #   'owners/shoppings#other_new'
+    # end
+
   devise_for :users,  controllers: {
     sessions: "users/sessions",
     passwords: "users/passwords",

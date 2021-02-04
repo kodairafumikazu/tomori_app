@@ -51,7 +51,6 @@
 | ---------------------- | ---------- | ------------------------------ |
 | product_name           | string     | null: false                    |
 | price                  | integer    | null: false                    |
-| owner                  | references | null: false, foreign_key: true |
 
 ### Association
 

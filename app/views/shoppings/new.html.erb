@@ -7,19 +7,19 @@
     <%# <h2 class="items-sell-title">商品の情報を入力</h2> %>
     <%= form_with model: @shopping, url: shoppings_path, local: true do |f| %>
 
-    <%# render 'shared/error_messages', model: f.object %>
+    <%= render 'shared/error_messages', model: f.object %>
 
     <%# 出品画像 %>
     <div class="img-upload">
-      <div class="weight-bold-text">
+      <%# <div class="weight-bold-text">
         出品画像
         <span class="indispensable">必須</span>
-      </div>
+      </div> %>
       <div class="click-upload">
         <p>
           クリックしてファイルをアップロード
         </p>
-        <%= f.file_field :image, id:"item-image" %>
+        <%= f.file_field :image %><%# id:"shopping-image" %>
       </div>
     </div>
     <%# /出品画像 %>
@@ -29,7 +29,7 @@
         商品名
         <span class="indispensable">必須</span>
       </div>
-      <%= f.text_area :product_name, class:"items-text", id:"item-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
+      <%= f.text_field :product_name, placeholder:"例)紅茶" %><%# class:"shoppings-text", id:"shopping-name", placeholder:"商品名（必須 40文字まで)", maxlength:"40" %>
       
     </div>
     
@@ -38,18 +38,18 @@
 
     <%# 販売価格 %>
     <div class="sell-price">
-      <div>
-        <div class="price-content">
-          <div class="price-text">
-            <span>価格</span>
-            <span class="indispensable">必須</span>
-          </div>
-          <span class="sell-yen">¥</span>
-          <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）300" %>
+      <%# <div> %>
+      <div class="price-content">
+        <div class="price-text">
+          <span>価格</span>
+          <span class="indispensable">必須</span>
         </div>
-        
-        </span>
+        <span class="sell-yen">¥</span>
+        <%= f.text_field :price, placeholder:"例）300" %><%#class:"price-input", id:"shopping-price", %>
       </div>
+        
+        <%# </span>
+      </div> %>
     </div>
     <%# /販売価格 %>
 
@@ -58,7 +58,7 @@
     <%# 下部ボタン %>
     <div class="sell-btn-contents">
       <%= f.submit "出品する", class:"sell-btn" %>
-      <%=link_to 'もどる', root_path, class:"back-btn" %>
+      <%= link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
   </div>

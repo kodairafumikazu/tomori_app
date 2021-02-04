@@ -3,7 +3,7 @@ class CreateShoppings < ActiveRecord::Migration[6.0]
     create_table :shoppings do |t|
       t.string     :product_name, null: false
       t.integer    :price, null: false
-      # t.references :owner, foreign_key: true
+     #t.references :owner_id, foreign_key: true
 
       t.timestamps
     end
