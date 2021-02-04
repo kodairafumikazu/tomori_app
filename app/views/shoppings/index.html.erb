@@ -84,11 +84,11 @@
             <% image_tag shopping.image, class: "article-img" %>
           
             
-            <% if shopping.purchase.present? %>
-              <div class='article-title'>
+            <%# if @shoppings.order.present? %>
+              <%# <div class='article-title'>
                 <span>売り切れ!!</span>
-              </div>
-            <% end %>
+              </div> %>
+            <%# end %>
           </div>  
             <div class="article-foot">
               <div class="article-title">
@@ -96,7 +96,7 @@
               </div>
             </div>
             <div class='shopping-price'>
-              <span><%= shopping.price %>円<br><%= shopping.shipping_charge.name %></span>
+              <span><%= shopping.price %><%# shopping.shipping_charge.name %></span>
               <div class='star-btn'>
                 <%= image_tag "", class:"article-img" %>
                 <span class='star-count'>0</span>
