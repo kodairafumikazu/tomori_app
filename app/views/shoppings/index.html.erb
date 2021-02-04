@@ -20,7 +20,7 @@
         </div>
         <div class="article-foot">
           <div class="article-title">
-            カプチーノ　420円
+            カプチーノ　380円
           </div>
         </div>
       </a>
@@ -44,7 +44,7 @@
         </div>
         <div class="article-foot">
           <div class="article-title">
-            ブレンド珈琲　420円
+            ブレンド珈琲　380円
           </div>
         </div>
       </a>
@@ -105,27 +105,24 @@
           <% end %>
         </div> 
         <% end %>
-
-        <% unless @shoppings.present? %>
-      <article class='article-card'>
-        <%= link_to new_shopping_path do %>
-        <%= image_tag "4404299_s.jpg", class: "article-img" %>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            商品を出品してね！
-          </h3>
-          <div class='item-price'>
-            <span>900円</span>
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <% end %>
-
-
-
       </a>
     </article>
+      <% unless @shoppings.present? %>
+      <article class="article-card">
+        <a href="" class="article-link"><div>ダミー商品</div>
+          <div class="article-head">
+            <%= link_to new_shopping_path do %>
+            <%= image_tag "4404299_s.jpg", class: "article-img" %>
+          </div>
+          <div class="article-foot">
+            <div class="article-title">
+              <span>カフェモカ　420円</span>
+            </div>
+          </div>
+        </a>
+        <% end %>
+      </article>
+    <% end %>
   </main>
 
   
