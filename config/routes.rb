@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     sessions: "owners/sessions",
     passwords: "owners/passwords",
     registrations: "owners/registrations"
+    #shoppings: "shoppings"
   }
   devise_for :users,  controllers: {
     sessions: "users/sessions",

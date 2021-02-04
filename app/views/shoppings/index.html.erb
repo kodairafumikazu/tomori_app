@@ -76,7 +76,7 @@
     <%# 商品一覧 %>
     <article class="article-card">
       <a href="" class="article-link"><div>新規商品</div>  
-        <div class='article-head'>                                      
+        <div class='main-second'>                                      
           <% @shoppings.each do |shopping| %>
           <li class='list'> 
           <%= link_to shopping_path(shopping.id) do %>
@@ -90,8 +90,10 @@
               </div>
             <% end %>
           </div>  
-            <div class='shopping-name'>
-              <%= shopping.product_name %>
+            <div class="article-foot">
+              <div class="article-title">
+                <%= shopping.product_name %>
+              </div>
             </div>
             <div class='shopping-price'>
               <span><%= shopping.price %>円<br><%= shopping.shipping_charge.name %></span>
@@ -103,30 +105,26 @@
           <% end %>
         </div> 
         <% end %>
-        
 
-        <% unless @shopping.present? %>
-        <li class='list'>
-          <%= link_to root_path do %>
-          <%= image_tag "4404299_s.jpg", class: "article-img" %>
-          <%# <div class='shopping-info'> %>
-          <div class="article-foot">
-            <div class="article-title">
-              カフェモカ　420円
-            </div>
+        <% unless @shoppings.present? %>
+      <article class='article-card'>
+        <%= link_to new_shopping_path do %>
+        <%= image_tag "4404299_s.jpg", class: "article-img" %>
+        <div class='item-info'>
+          <h3 class='item-name'>
+            商品を出品してね！
+          </h3>
+          <div class='item-price'>
+            <span>900円</span>
           </div>
-            <div class='item-price'>
-              <span>30000円<br>(税込み)</span>
-              <div class='star-btn'>
-                <%= image_tag "", class:"star-icon" %>
-                <span class='star-count'>0</span>
-              </div>
-            </div> 
-          <% end %>
-        </li>
-        <% end %> 
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+
+
+
       </a>
-      <%# </div> %>
     </article>
   </main>
 
@@ -135,18 +133,19 @@
 
 
 
-  <% if user_signed_in? %>
-    <%= link_to root_path, class: 'order-btn' do %>
-      <span class='order-title'>商品を購入</span>
-      <%= image_tag "210746.jpg", class: "order-btn-icon" %>
+    <% if user_signed_in? %>
+      <%= link_to root_path, class: 'order-btn' do %>
+        <span class='order-title'>商品を購入</span>
+        <%= image_tag "210746.jpg", class: "order-btn-icon" %>
+      <% end %>
+    <% else owner_signed_in? %>
+      <%= link_to new_shopping_path, class: 'order-btn' do %>
+        <span class='order-btn-text'>出品する</span>
+        <%= image_tag "watermark.jpg", class: "order-btn-icon" %>
+      <% end %>
     <% end %>
-  <% else owner_signed_in? %>
-    <%= link_to new_shopping_path, class: 'order-btn' do %>
-      <span class='order-btn-text'>出品する</span>
-      <%= image_tag "watermark.jpg", class: "order-btn-icon" %>
-    <% end %>
-  <% end %>
-  <aside class="sidebar-container">
-  </aside>
+    <aside class="sidebar-container">
+    </aside>
+  
 </div>
 

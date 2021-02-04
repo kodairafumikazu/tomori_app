@@ -1,5 +1,7 @@
 class ShoppingsController < ApplicationController
-  before_action :move_to_index, except: :index
+  #before_action :move_to_index, except: :index
+  #before_action :set_shopping, only: [:show, :edit, :update, :destroy]
+
 
   def index
     @shoppings = Shopping.all
@@ -21,7 +23,17 @@ class ShoppingsController < ApplicationController
   def show
   end
 
-  def move_to_index
-    redirect_to action: :index unless user_signed_in?
+  private
+
+  def shopping_params
+    params.require(:shopping).permit(:image, :product_name, :price)#.merge(owner_id: current_owner.id)
   end
+
+  # def set_shopping
+  #   @shopping = Shopping.find(params[:id])
+  # end
+
+  # def move_to_index
+  #   redirect_to action: :index unless user_signed_in? || owner_signed_in?
+  # end
 end
