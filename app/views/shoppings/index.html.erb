@@ -75,54 +75,38 @@
     </article>
     <%# 商品一覧 %>
     <article class="article-card">
-      <a href="" class="article-link"><div>新規商品</div>  
-        <div class='main-second'>                                      
-          <% @shoppings.each do |shopping| %>
-          <li class='list'> 
-          <%= link_to shopping_path(shopping.id) do %>
-          <div class='article-head'>                            
-            <% image_tag shopping.image, class: "article-img" %>
-          
-            
-            <%# if @shoppings.order.present? %>
-              <%# <div class='article-title'>
-                <span>売り切れ!!</span>
-              </div> %>
-            <%# end %>
-          </div>  
-            <div class="article-foot">
-              <div class="article-title">
-                <%= shopping.product_name %>
-              </div>
-            </div>
-            <div class='shopping-price'>
-              <span><%= shopping.price %><%# shopping.shipping_charge.name %></span>
-              <div class='star-btn'>
-                <%= image_tag "", class:"article-img" %>
-                <span class='star-count'>0</span>
-              </div>
-            </div>
-          <% end %>
-        </div> 
+      <% @shoppings.each do |shopping| %>
+      <a href="" class="article-link"><%= shopping.product_name %>
+        <div class='article-head'>  
+          <%# link_to shopping_path(shopping.id) do %>
+          <%= image_tag shopping.image, class: "article-img" %>
+        </div>  
+        <div class="article-foot">
+          <div class="article-title">
+            <%= "#{shopping.price}円" %>
+          </div>
+        </div>
+        <%# end %>
+      </a>
+      <% end %>
+    </article>
+
+    <% unless @shoppings.present? %>
+    <article class="article-card">
+      <a href="" class="article-link"><div>ダミー商品</div>
+        <div class="article-head">
+          <%= link_to new_shopping_path do %>
+          <%= image_tag "4404299_s.jpg", class: "article-img" %>
+        </div>
+        <div class="article-foot">
+          <div class="article-title">
+            カフェモカ　420円
+          </div>
+        </div>
         <% end %>
       </a>
-    </article>
-      <% unless @shoppings.present? %>
-      <article class="article-card">
-        <a href="" class="article-link"><div>ダミー商品</div>
-          <div class="article-head">
-            <%= link_to new_shopping_path do %>
-            <%= image_tag "4404299_s.jpg", class: "article-img" %>
-          </div>
-          <div class="article-foot">
-            <div class="article-title">
-              <span>カフェモカ　420円</span>
-            </div>
-          </div>
-        </a>
-        <% end %>
-      </article>
     <% end %>
+    </article>
   </main>
 
   

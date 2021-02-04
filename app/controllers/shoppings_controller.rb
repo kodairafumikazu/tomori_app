@@ -23,6 +23,27 @@ class ShoppingsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    @shopping.update(shopping_params)
+    if @shopping.save
+      redirect_to root_path
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @shopping.destroy
+      redirect_to root_path
+    else
+      render :show
+    end
+  end
+
+
   private
 
   def shopping_params
