@@ -19,16 +19,17 @@
       </span>
     </div>
 
-  <%# if user_signed_in? && @shopping.purchase.blank? %>
+  <% if owner_signed_in? && @shopping.purchase.blank? %>
     <%# if current_user.id == @shopping.user_id %>
-      <%= link_to '商品の編集', edit_shopping_path, method: :get, class: "item-red-btn" %>
-      <p class='or-text'>or</p>
-      <%= link_to '削除', shopping_path(@shopping.id), method: :delete, class:'item-destroy' %>
+    <%= link_to '商品の編集', edit_shopping_path, method: :get, class: "item-red-btn" %>
+    <p class='or-text'>or</p>
+    <%= link_to '削除', shopping_path(@shopping.id), method: :delete, class:'item-destroy' %>
+  <% end %>
     <%# else %>
-
-      <%# link_to '購入画面に進む', shopping_purchases_path(@shopping.id), method: :get, class:"item-red-btn"%>
+  <% if user_signed_in? %>
+    <% link_to '購入画面に進む', shopping_purchases_path(@shopping.id), method: :get, class:"item-red-btn"%>
     <%# end %>
-  <%# end %>
+  <% end %>
 
     
     
