@@ -1,6 +1,6 @@
 class ShoppingsController < ApplicationController
   #before_action :move_to_index, except: :index
-  before_action :set_shopping, only: [:show, :edit, :update, :destroy]
+  before_action :set_shopping, only: [:edit, :update, :destroy, :show]
 
 
   def index

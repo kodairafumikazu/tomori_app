@@ -1,7 +1,8 @@
 <div class="main-wrap">
   <main class="main">
     <article class="article-card">
-      <a href="" class="article-link"><div>メニュー①</div>
+      <%# link_to shopping_path(:id) do %>
+      <div class="article-link">メニュー①</div>
         <div class="article-head">
           <%= image_tag "230311_s.jpg", class: "article-img" %>
         </div>
@@ -10,7 +11,8 @@
             パンケーキ　450円
           </div>
         </div>
-      </a>
+      <%# end %>
+      <%# </a> %>
     </article>
     <article class="article-card">
       <a href="" class="article-link"><div>メニュー②</div>
@@ -87,7 +89,7 @@
         </a>
       </article>
     <% end %>
-    
+
     <% unless @shoppings.present? %>
       <article class="article-card">
         <a href="" class="article-link"><div>ダミー商品</div>
