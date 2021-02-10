@@ -3,12 +3,13 @@ Rails.application.routes.draw do
     sessions: "owners/sessions",
     passwords: "owners/passwords",
     registrations: "owners/registrations"
-    #shoppings: "shoppings"
+    #shoppings: "owners/shoppings"
   }
 
     # devise_scope :owner do
     #   get 'owners/:id', to:
-    #   'owners/shoppings#other_new'
+    #   'owners/shoppings#new'
+    #   'owners/shoppings#show'
     # end
 
   devise_for :users,  controllers: {
@@ -17,12 +18,13 @@ Rails.application.routes.draw do
     registrations: "users/registrations"
   }
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root "items#index"
+  
    
   resources :items, only: [:index, :show]
   resources :store_guides, only: :index
   resources :accesses, only: :index
 
+  root to: "shoppings#index"
   resources :shoppings do
     resources :orders, only: [:create, :index]
   end

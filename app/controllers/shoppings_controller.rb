@@ -1,6 +1,6 @@
 class ShoppingsController < ApplicationController
   #before_action :move_to_index, except: :index
-  before_action :set_shopping, only: [:edit, :update, :destroy, :show]
+  before_action :set_shopping, only: [:edit, :update, :destroy]#, :show]
 
 
   def index
@@ -47,7 +47,7 @@ class ShoppingsController < ApplicationController
   private
 
   def shopping_params
-    params.require(:shopping).permit(:image, :product_name, :price)#.merge(user_id: current_user.id)
+    params.require(:shopping).permit(:image, :product_name, :price).merge(owner_id: current_owner.id)
   end
 
   def set_shopping

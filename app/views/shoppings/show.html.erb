@@ -2,20 +2,20 @@
 <div class="item-show">
   <div class="item-box">
     <h2 class="name">
-      <%= @shopping.product_name %>
+      <%# @shopping.product_name %>
     </h2>
     <div class='item-img-content'>
-      <%= image_tag @shopping.image, class:"item-box-img" %>
-      <% if @shopping.purchase.present? %> 
+      <%# image_tag @shopping.image, class:"item-box-img" %>
+      <%# if @shopping.purchase.present? %> 
         <div class='sold-out'>
           <span>Sold Out!!</span>
         </div>
-      <% end %>
+      <%# end %>
       
     </div>
     <div class="item-price-box">
       <span class="item-price">
-        <%= @shopping.price %>
+        <%# @shopping.price %>
       </span>
     </div>
 
@@ -43,5 +43,4 @@
       後ろの商品 ＞
     </a>
   </div>
-  <a href=“#” class=‘another-item’><%= @item.category.name %>をもっと見る</a>
 </div>
