@@ -47,7 +47,7 @@ class ShoppingsController < ApplicationController
   private
 
   def shopping_params
-    params.require(:shopping).permit(:image, :product_name, :price).merge(owner_id: current_owner.id)
+    params.require(:shopping).permit(:image, :product_name, :price)#.merge(owner_id: current_owner.id)
   end
 
   def set_shopping
