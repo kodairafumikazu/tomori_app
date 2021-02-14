@@ -127,6 +127,11 @@ img{
 	 text-decoration: none;
 }
 
+.links {
+  display: flex;
+  width: 50vw;
+}
+
 
 .change-item-btn {
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
