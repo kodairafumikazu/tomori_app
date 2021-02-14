@@ -76,11 +76,13 @@ font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Minch
   padding-top: 50px;
   padding-left: 40px;
 }
+
 p {
   margin:  0;  
   line-height: 2; 
   padding-left:  40px; 
 }
+
 .head_test:before {
   content:  ''; 
   width: 0; 
