@@ -1,8 +1,7 @@
 <div class="main-wrap">
   <main class="main">
     <article class="article-card">
-      <%= link_to shopping_path(:id) do %>
-      <div class="article-link">メニュー①</div>
+      <a href="" class="article-link"><div>メニュー①</div>
         <div class="article-head">
           <%= image_tag "230311_s.jpg", class: "article-img" %>
         </div>
@@ -11,8 +10,7 @@
             パンケーキ　450円
           </div>
         </div>
-      <% end %>
-      <%# </a> %>
+      </a> 
     </article>
     <article class="article-card">
       <a href="" class="article-link"><div>メニュー②</div>
@@ -77,16 +75,15 @@
     <%# 商品一覧 %>
     <% @shoppings.each do |shopping| %>
       <article class="article-card">
-        <a href="" class="article-link"><div>新商品</div>
-          <div class='article-head'>  
-            <%= image_tag shopping.image, class: "article-img" %>
-          </div>  
-          <div class="article-foot">
-            <div class="article-title">
-              <span><%= shopping.product_name %>&nbsp;&nbsp;&nbsp;<%= "#{shopping.price}円" %></span>
-            </div>
+        <%= link_to '新商品', shopping_path(shopping), class: "article-link" %>
+        <div class='article-head'>  
+          <%= image_tag shopping.image, class: "article-img" %>
+        </div>  
+        <div class="article-foot">
+          <div class="article-title">
+            <span><%= shopping.product_name %>&nbsp;&nbsp;&nbsp;<%= "#{shopping.price}円" %></span>
           </div>
-        </a>
+        </div>
       </article>
     <% end %>
 

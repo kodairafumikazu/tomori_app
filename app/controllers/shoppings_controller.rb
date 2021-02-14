@@ -1,6 +1,6 @@
 class ShoppingsController < ApplicationController
   #before_action :move_to_index, except: :index
-  before_action :set_shopping, only: [:edit, :update, :destroy]#, :show]
+  before_action :set_shopping, only: [:edit, :update, :destroy, :show]
 
 
   def index
@@ -51,6 +51,7 @@ class ShoppingsController < ApplicationController
   end
 
   def set_shopping
+    #binding.pry
     @shopping = Shopping.find(params[:id])
   end
 
