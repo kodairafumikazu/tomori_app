@@ -43,6 +43,7 @@ header {
 	font-size: 15px;
 	line-height: 2px;
 }
+
  
 .title:before {
 	content:''; 
@@ -296,7 +297,7 @@ div.contents.row div.content_post .more ul.more_list li a {
 }
 
 div.contents.row div.content_post .more ul.more_list li a:hover {
-  background-color: #57C3E9;
+  background-color: #97b5c0;
   color: #fff;
 }
 
@@ -388,3 +389,35 @@ form input[type="submit"]:hover {
   color: #666;
 }
 
+
+#load_animation {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+      padding: 50px 0;
+      img{
+          width: 30vh;
+          height: auto;
+          display: none;
+      }
+  }
+
+  .loading_gif {
+      padding: 50px 0;
+      img{
+          width: 12vh;
+          height: auto;
+          display: none;
+      }
+  }  
+}
