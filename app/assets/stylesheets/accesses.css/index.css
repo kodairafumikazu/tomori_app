@@ -67,35 +67,6 @@ font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Minch
 	width: 20%;	
 }
 
-.head_test {
-  margin:  0;
-  font-size:  17px;
-  position:  relative;
-  font-weight:  normal;
-  margin-bottom: 17px;
-  padding-top: 50px;
-  padding-left: 40px;
-}
-
-p {
-  margin:  0;  
-  line-height: 2; 
-  padding-left:  40px; 
-}
-
-.head_test:before {
-  content:  ''; 
-  width: 0; 
-  height: 0; 
-  border-style: solid;
-  border-width: 0px 0 110px 80px;
-  border-color: transparent transparent #9aafd2 transparent; 
-  position:  absolute; 
-  z-index:  -1; 
-  transform: rotate(30deg); 
-  top: -20px; 
-  left: 30px; 
-}
 
 .second-image {
   padding: 10px;
