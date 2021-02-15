@@ -361,7 +361,7 @@ form textarea {
 form input[type="submit"] {
   background-color: lightgray;
   border-radius: 20px;
-  color: #fff;
+  color: #ffff;
   border: 0;
   font-size: 18px;
 }

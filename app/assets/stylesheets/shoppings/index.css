@@ -84,20 +84,15 @@
   height: 20%;
 }
 
-.name {
+.name,
+.item-price,
+.or-text,
+.change-item-btn,
+.items-sell-main {
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
   padding: 10px;
 }
 
-.item-price {
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
-  padding: 10px;
-}
-
-.or-text {
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
-  padding: 10px;
-}
 
 .item-btn {
   display: block;
@@ -121,14 +116,3 @@
   width: 50vw;
 }
 
-
-.change-item-btn {
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
-  padding: 10px;
-}
-
-
-.items-sell-main {
-  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
-  padding: 10px;
-}
