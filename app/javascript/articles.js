@@ -1,11 +1,3 @@
-$(function () {
-  $(document).on("mouseover", "h2", function () {
-    $(this).css({ "color": "pink" });
-  }).on("mouseout", "h2", function () {
-    $(this).css({ "color": "" });
-  })
-});
-
 
 $(function(){
   let $window = $(window),
@@ -31,3 +23,11 @@ $(function(){
       $load.delay(900).fadeOut("slow");
   }
 }); 
+
+
+$(function(){
+  $(".fade-img img:not(:first-child)").hide();
+  setInterval(function() {
+    $(".fade-img img:first-child").fadeOut("slow").next("img").fadeIn("slow").end().appendTo(".fade-img");
+  },5000);
+});

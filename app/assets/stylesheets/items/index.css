@@ -110,15 +110,18 @@ li {
   height: 60vh;
 }
 
+
+
 .top-image {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 /* 新着情報 */
 .upper-content {
-  height: 450px;
-  margin: 0 160px;
+  height: 400px;
+  margin: 600px 150px;
 }
 
 .heading-name {
@@ -421,3 +424,5 @@ form input[type="submit"]:hover {
       }
   }  
 }
+
+
