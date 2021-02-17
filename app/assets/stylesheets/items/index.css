@@ -170,7 +170,7 @@ li {
 }
 
 .product-image-to-circle {
-  background-image: url("98767_s.jpg", "155001_s.jpg", "1613526_s.jpg");
+  
   width:  300px;
   border-radius: 50%;
   background-position: left top;
@@ -430,7 +430,7 @@ form input[type="submit"]:hover {
   }  
 }
 
-
 .type {
-  height: 400px;
+  height: 43vh;
 }
+
