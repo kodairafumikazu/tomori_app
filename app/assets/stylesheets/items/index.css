@@ -412,21 +412,21 @@ form input[type="submit"]:hover {
   align-items: center;
 
   .icon {
-      padding: 50px 0;
-      img{
-          width: 30vh;
-          height: auto;
-          display: none;
-      }
+    padding: 50px 0;
+    img{
+        width: 30vh;
+        height: auto;
+        display: none;
+    }
   }
 
   .loading_gif {
-      padding: 50px 0;
-      img{
-          width: 12vh;
-          height: auto;
-          display: none;
-      }
+    padding: 50px 0;
+    img{
+        width: 12vh;
+        height: auto;
+        display: none;
+    }
   }  
 }
 
