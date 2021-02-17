@@ -150,13 +150,13 @@ li {
   font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
   display: flex;
   font-size: 19px;
-  margin: 0 0 10px 5px;
+  margin: 0 10px 20px 40px;
   color: rgb(25, 33, 42);
   line-height: 3;
 }
 
 .message-date {
-  padding-right: 30px;
+  padding-right: 60px;
 }
 
 .middle-content {
@@ -430,9 +430,6 @@ form input[type="submit"]:hover {
   }  
 }
 
-.submit-content {
-  height: 600px;
-}
 
 .type {
   height: 400px;
