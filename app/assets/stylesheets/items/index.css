@@ -41,7 +41,7 @@ header {
 	border-bottom:2px solid #ccc;
 	font-weight: bold;
 	font-size: 15px;
-	line-height: 2px;
+  line-height: 2px;
 }
 
  
@@ -113,15 +113,14 @@ li {
 
 
 .top-image {
-  height: 100%;
+  height: 80vh;
   width: 100%;
-  object-fit: cover;
 }
 
 /* 新着情報 */
 .upper-content {
-  height: 400px;
-  margin: 600px 150px;
+  height: 40px;
+  margin: 300px 150px;
 }
 
 .heading-name {
@@ -135,19 +134,25 @@ li {
 .messages {
   width: 50vw;
   margin: 0 auto;
-  padding: 1.65rem 2rem;
-  background-color: rgba(130, 141, 152, 0.4);
-  background-image:
-    linear-gradient(90deg, rgba(130, 141, 152, 0.4) 50%, transparent 50%),
-    linear-gradient(rgba(130, 141, 152, 0.4) 50%, transparent 50%);
-  background-size: 34px 35px;
+  background: 
+    radial-gradient(rgb(203, 127, 127) 3px, transparent 4px),
+    radial-gradient(rgb(203, 127, 127) 3px, transparent 4px),
+    linear-gradient(#fff 5px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+  #fff;
+  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  text-shadow: 0 1px 0 #ccc, 0 3px 0 #ccc, 0 4px 10px rgba(0, 0, 0, .2);
 }
 
 .message {
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'Hiragino Mincho ProN', 'HGS明朝E', 'ＭＳ Ｐ明朝', serif;
   display: flex;
-  font-size: 18px;
-  margin: 0 0 10px 30px;
+  font-size: 19px;
+  margin: 0 0 10px 5px;
+  color: rgb(25, 33, 42);
+  line-height: 3;
 }
 
 .message-date {
@@ -155,13 +160,13 @@ li {
 }
 
 .middle-content {
-  height: 450px;
-  margin: 0 160px;
+  height: 100px;
+  margin: 700px 60px;
 }
 .product-list{
   display: flex;
   justify-content: space-around;
-  margin: 60px 0;
+  margin: 80px 0;
 }
 
 .product-image-to-circle {
@@ -425,4 +430,10 @@ form input[type="submit"]:hover {
   }  
 }
 
+.submit-content {
+  height: 600px;
+}
 
+.type {
+  height: 400px;
+}
