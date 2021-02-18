@@ -223,7 +223,7 @@ li {
 
 
 footer {
-  height: 50px;
+  height: 60px;
   background-color: #f0f0f0;
   text-align: center;
   color: gray;
@@ -430,7 +430,4 @@ form input[type="submit"]:hover {
   }  
 }
 
-.type {
-  height: 43vh;
-}
 
