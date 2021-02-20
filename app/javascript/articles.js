@@ -1,4 +1,3 @@
-
 $(function(){
   let $window = $(window),
       $load = $('#load_animation'),
@@ -13,14 +12,14 @@ $(function(){
       HideLoadingScreen();
   })
   
-  //５秒後に強制的にHideLoadingScreen()を実行
+  //1秒後に強制的にHideLoadingScreen()を実行
   setTimeout(function(){
       HideLoadingScreen();
   },1000);
 
   //ロード画面を非表示にする関数
   function HideLoadingScreen(){
-      $load.delay(900).fadeOut("slow");
+      $load.delay(1500).fadeOut("slow");
   }
 }); 
 
@@ -29,5 +28,6 @@ $(function(){
   $(".fade-img img:not(:first-child)").hide();
   setInterval(function() {
     $(".fade-img img:first-child").fadeOut("slow").next("img").fadeIn("slow").end().appendTo(".fade-img");
-  },9000);
+  },8000);
 });
+
