@@ -1,87 +1,62 @@
-<html>
- <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Hair OLIVE</title>
-  </head>
-  <body>
-    <header>
-      <div class="heading">
-        <h1 class="title">Hair OLIVE</h1>
-      </div>
-      <div class="navbar">
-        <ul class="nav-lists">
-          <li>サロンガイド</li>
-          <li>メニュー</li>
-          <li>スタッフ一覧</li>
-          <li>ギャラリー</li>
-          <li>アクセス</li>
-          <li>ブログ</li>
-        </ul>
-      </div>
-    </header>
-
-    <div class="contents">
-      <div class="first-view">
-        <img src="#" alt="トップ画面" class="top-image">
-      </div>
-      <div class="upper-content">
-        <h2 class="heading-name">新着情報</h2>
-        <ul class="messages">
-          <li class="message">
-            <div class="message-date">2019/10/06</div>
-            <div>【新規のお客さま限定】<b>10％OFF</b>キャンペーン</div>
-          </li>
-          <li class="message">
-            <div class="message-date">2019/10/03</div>
-            <div>うれしい<b>ポイントアップキャンペーン</b></div>
-          </li>
-          <li class="message">
-            <div class="message-date">2019/09/27</div>
-            <div>2020年成人式 ご予約承ります</div>
-          </li>
-          <li class="message">
-            <div class="message-date">2018/10/03</div>
-            <div>うれしい<b>ポイントアップキャンペーン</b></div>
-          </li>
-          <li class="message">
-            <div class="message-date">2018/09/27</div>
-            <div>2019年成人式 ご予約承ります</div>
-          </li>
-        </ul>
-      </div>
-      <div class="middle-content">
-        <h2 class="heading-name">スタイリスト紹介</h2>
-        <ul class="stylist-list">
-          <li>
-            <img src="#" alt="staff1" class="stylist-image">
-            <h4 class="stylist-name">鈴木</h4>
-          </li>
-          <li>
-            <img src="#" alt="staff2" class="stylist-image">
-            <h4 class="stylist-name">佐藤</h4>
-          </li>
-          <li>
-            <img src="#" alt="staff3" class="stylist-image">
-            <h4 class="stylist-name">山田</h4>
-          </li>
-        </ul>
-      </div>
-
-      <div class="bottom-content">
-        <form class="contact-form">
-          <h2 class="heading-name">メールで予約</h2>
-          <input type="text" placeholder="name" class="small-field">
-          <input type="text" placeholder="e-mail" class="small-field">
-          <textarea placeholder="message" class="large-field"></textarea>
-          <input type="submit" value="SEND" class="send">
-        </form>
-      </div>
-
+<div class="contents">
+  <div class="first-view">
+    <div class="fade-img">
+      <%= image_tag "251280.jpg", class:"top-image" %>
+      <%= image_tag "41280.jpg", class:"top-image" %>
+      <%= image_tag "751280.jpg", class:"top-image" %>
     </div>
-
-    <footer>
-    <p>Copyright(C) Hair OLIVE ALL RIGHTS RESERVED.</p>
-    </footer>
-  </body>
-</html>
+  </div>
+  <div class="upper-content">
+    <h2 class="heading-name">新着情報</h2>
+    <ul class="messages">
+      <li class="message">
+        <div class="message-date">2021/2/05</div>
+        <b>【新規オープン記念】10％OFFキャンペーン</b>
+      </li>
+      <li class="message">
+        <div class="message-date">2021/2/14</div>
+        <b>バレンタインデー、キャンペーン</b>
+      </li>
+      <li class="message">
+        <div class="message-date">2021/2/21</div>
+        <b>自家焙煎珈琲豆 キリマンジャロ産、コロンビア産入荷</b>
+      </li>
+      <li class="message">
+        <div class="message-date">2021/2/28</div>
+        <b>嬉しい、ポイントアップキャンペーン</b>
+      </li>
+    </ul>
+  </div>
+  <div class="middle-content">
+    <h2 class="heading-name">ギャラリー</h2>
+    <ul class="product-list">
+      <li>
+        <%= image_tag "98767.jpg", class:"product-image-to-circle" %>
+        <h4 class="product-name">直営工場</h4>
+      </li>
+      <li>
+        <%= image_tag "155001.jpg", class:"product-image-to-circle" %>
+        <h4 class="product-name">厳選豆</h4>
+      </li>
+      <li>
+        <%= image_tag "1613526.jpg", class:"product-image-to-circle" %>
+        <h4 class="product-name">直営農園</h4>
+      </li>
+    </ul>
+  </div>
+  <div class="submit-content">
+    <form class="contact-form">
+      <h2 class="heading-name">メールでお問い合わせ</h2>
+      <input type="text" placeholder="name" class="small-field">
+      <input type="text" placeholder="e-mail" class="small-field">
+      <textarea placeholder="message" class="large-field"></textarea>
+      <input type="submit" value="SEND" class="send">
+    </form>
+  </div>
+  <div id="load_animation">
+    <div class="loading_gif">
+      <%= image_tag "Preloader.gif", :size =>"40x40" %>
+    </div>
+  </div>
+</div>
+    
